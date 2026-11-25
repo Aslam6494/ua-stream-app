@@ -1,0 +1,6 @@
+{
+  "name": "Famelack Live TV",
+  "description": "Modern live television streaming frontend powered by Famelack live broadcast feeds with keyboard D-pad remote, touch gestures, and virtual remote controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

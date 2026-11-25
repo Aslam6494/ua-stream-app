@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>UA Stream — Live TV</title>
+    <meta
+      name="description"
+      content="UA Stream delivers instant full-screen live television optimized for Samsung Tizen TV remotes, keyboard D-pad navigation, and touch gestures."
+    />
+    <meta property="og:title" content="UA Stream — Live TV" />
+    <meta
+      property="og:description"
+      content="Instant full-screen live television with priority Bangladeshi, Indian, English, and global broadcasts for Samsung TV and touch devices."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090B0F'/%3E%3Cpath d='M14 18v19c0 8.5 5.5 14 13.5 14S41 45.5 41 37V18h-7v18.5c0 4.6-2.5 7.5-6.5 7.5S21 41.1 21 36.5V18h-7z' fill='%23F4F6FA'/%3E%3Cpath d='M39 51L50 18h-7.2L31.8 51H39z' fill='%23E11D48'/%3E%3Cpath d='M45 39h10v6H45z' fill='%23E11D48'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('ua_stream_theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var isDark = saved ? saved === 'dark' : true;
+          document.documentElement.classList.toggle('dark', isDark);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#090B0F] text-[#F4F6FA] antialiased overflow-hidden selection:bg-rose-600 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
